@@ -1,0 +1,8 @@
+a = input("Strichka:")
+slovnuk = dict.fromkeys(a,0)
+for x in a:
+    slovnuk[x] = int(slovnuk[x]) + 1;
+
+sort = dict(sorted(slovnuk.items(), key=lambda item: item[0]))
+
+print(sort)
